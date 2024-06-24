@@ -1,0 +1,7 @@
+<resources>
+    <!-- Other styles -->
+
+    <style name="ToolbarTitleBold" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

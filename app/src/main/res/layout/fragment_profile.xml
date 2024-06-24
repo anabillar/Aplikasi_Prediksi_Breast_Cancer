@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="292dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/Theme.AppCompat.Dialog"
+            app:title="About Breast Guardians"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/ToolbarTitleBold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breast Guardians is designed to assist in detecting breast cancer at its initial stages, crucial for improving treatment success and recovery chances. \n\nPrimary Objective:\nDetecting early signs of breast cancer before clinical symptoms manifest, providing users with information to take timely medical actions. \n\nThis App serve as valuable tools in preventive healthcare programs, empowering many women to take proactive steps in maintaining breast health.\n\nAbout Malignant and Benign: \n\nMalignant\nDefinition: Malignant tumors are cancerous growths. These cells have the ability to grow rapidly, invade surrounding tissues, and spread to other parts of the body through a process called metastasis.\nCharacteristics:\nInvasive: They invade and damage nearby healthy tissues.\nMetastasis: They can spread to other organs and tissues via the bloodstream or lymphatic system.\nRapid Growth: Cancerous cells grow and divide more quickly than normal cells.\nUncontrolled: They grow uncontrollably and do not respond to normal signals to stop dividing.\nExamples: Invasive ductal carcinoma and invasive lobular carcinoma.\n\nBenign\nDefinition: Benign tumors are non-cancerous growths. These cells typically grow slowly and do not spread to other parts of the body.\nCharacteristics:\nNon-Invasive: They do not invade nearby tissues.\nNo Metastasis: They do not spread to other organs and tissues.\nSlow Growth: Benign cells grow more slowly and in a more orderly manner.\nLocalized: They grow within a specific area and often have a capsule or boundary separating them from healthy tissue.\nExamples: Fibroadenomas, breast cysts, and intraductal papillomas.\n\nKey Differences\nAbility to Spread: Malignant tumors can spread to other parts of the body, while benign tumors do not.\nGrowth Rate: Malignant tumors grow faster and more uncontrollably compared to benign tumors.\nTissue Damage: Malignant tumors tend to damage surrounding tissues, whereas benign tumors usually do not.\n\nTreatment\nMalignant: Often requires more aggressive treatment such as surgery, chemotherapy, radiation therapy, or hormone therapy to prevent spread and control growth.\nBenign: May only need observation or surgical removal if they cause symptoms or cosmetic concerns.\n\nUnderstanding the differences between malignant and benign tumors is essential for determining diagnosis, treatment, and prognosis in breast cancer."
+                android:textSize="16sp"
+                android:textColor="@color/pink"
+                android:lineSpacingMultiplier="1.2"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/arrow"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/pink"
+        app:elevation="4dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

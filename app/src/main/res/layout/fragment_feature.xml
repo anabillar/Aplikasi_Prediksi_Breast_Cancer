@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="236dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/Theme.AppCompat.Dialog"
+            app:title="Features"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/ToolbarTitleBold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="550dp"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_edittext"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textViewDataset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Diagnosis"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewJudul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Data Type: Object"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewAbout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Radius Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewAbt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average radius (distance from the center to the edge) of the tumor cell nucleus. It can be used to measure the average size of the tumor.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewSumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Texture Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average texture of the tumor cell nucleus. Texture can include variations in pixel intensity within the image, which helps identify heterogeneity in the tumor tissue.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewJumlah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Perimeter Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average perimeter (circumference) length of the tumor cell nucleus. It provides information about the shape and size of the tumor.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Area Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average area of the tumor cell nucleus. It gives a two-dimensional measure of the tumor size.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Smoothness Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average smoothness of the tumor cell nucleus boundary. Smoothness refers to how even or uneven the edges of the tumor are. Malignant tumors often have less smooth edges.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Compactness Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average compactness or density of the tumor cell nucleus. It measures how dense the cells are within the tumor, which can be an indicator of malignancy.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Concavity Mean"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The average concavity of the tumor cell nucleus boundary. Concavity measures the irregularities in the tumor edges, which are often found in malignant tumors.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Area SE"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The standard error of the tumor cell nucleus area. It measures the variability in the area size from the sampled tumors, indicating the reliability of the area measurement.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pink_border"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/textViewFitur5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/babypink"
+                            android:text="Smoothness SE"
+                            android:textAlignment="center"
+                            android:textColor="@color/pink"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textViewftr5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The standard error of the tumor cell nucleus smoothness. It measures the variation in smoothness from the sampled tumors, showing the reliability of the smoothness measurement.\nData Type: Float64"
+                            android:textColor="@color/pink"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/footerWatermark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Breast Guardians"
+            android:textColor="@color/youngestpink"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
